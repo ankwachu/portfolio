@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hop pop Hop
+    {% endblock %}
+
+{% block body %}
+<h1 class="text-center">Festival Hop Pop Hop</h1>
+	<div class="d-flex row m-sm-4">
+    	{% for photo in photos %}
+                <div class="col-md-12 col-lg-4">
+                    <img class="img-fluid" src="{{ photo.image }}" alt="">		
+				</div>			
+        {% endfor %}
+	</div>
+{% endblock %}
