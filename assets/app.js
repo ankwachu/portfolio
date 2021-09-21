@@ -9,12 +9,17 @@
 import './styles/app.scss';
 
 const $ = require('jquery');
+const bootstrap = require('bootstrap');
 
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+
+return new bootstrap.Popover(popoverTriggerEl);
+
+});
 // start the Stimulus application
 import './bootstrap';
 
-$(document).ready(function() {
-    $('[data-toggle="popover"]').popover();
-});
 
 console.log('Hello Webpack Encore !')
