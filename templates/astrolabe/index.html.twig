@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}L'Astrolabe
+    {% endblock %}
+
+{% block body %}
+<h1 class="text-center">L'Astrolabe</h1>
+	<div class="d-flex row m-sm-4">
+    	{% for photo in photos %}
+                <div class="col-md-12 col-lg-4">
+                    <img class="img-fluid" src="{{ photo.image }}" alt="{{ photo.image }}">
+                    <p>{{ photo.title }} - {{ photo.date|date("Y")}}</p>
+				</div>			
+        {% endfor %}
+	</div>
+{% endblock %}
