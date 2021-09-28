@@ -1,0 +1,32 @@
+@import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Raleway&display=swap');
+@import "home.scss";
+
+$primary-text: 'Be Vietnam Pro', sans-serif;
+$secondary-text: 'Raleway', sans-serif;
+$main-color: #2c3e50;
+$background-color: #f8f9f9; 
+
+@mixin headings {
+    h1, h2, h3, h4, h5, h6 {
+      @content;
+    }
+  }
+  @include headings {
+    color:$main-color#2c3e50;
+    font-family: $primary-text;
+  }
+
+p {
+    font-family: $secondary-text;
+}
+
+//   cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🦖</text></svg>") 16 0,auto; /*!emojicursor.app*/
+
+body {
+  background-color: $background-color;
+}
+
+img {
+  min-height: 220px;
+}
