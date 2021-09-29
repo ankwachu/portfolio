@@ -20,5 +20,9 @@
         "watch": "encore dev --watch",
         "build": "encore production --progress",
         "heroku-postbuild" : "node_modules/.bin/encore production"
+    },
+    "engines": {
+        "node": "14.15.4",
+        "yarn" : "1.22.5"
     }
 }
