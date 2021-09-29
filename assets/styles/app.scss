@@ -31,3 +31,9 @@ a:hover {
 img {
   min-height: 220px;
 }
+
+@media screen and (max-width: 512px) {
+  p {
+    font-size: 32px;
+  }
+}
