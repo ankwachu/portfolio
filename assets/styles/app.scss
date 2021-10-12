@@ -36,6 +36,9 @@ img {
   p {
     font-size: 2.4rem;
   }
+  a {
+    font-size: 2rem !important;
+  }
 }
 
 @include media-breakpoint-up(lg) {
